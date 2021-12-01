@@ -177,7 +177,10 @@ function App() {
                                                      alt="Light Status" />
                                             </div>
                                         </div>
-                                        <button className={warning ? "warning" : ""} onClick={() => handleLightToggle(led)}>Toggle Light</button>
+                                        <button className={(warning ? " warning " : " ") + (led[1].isOn ? " active-led " : " ")}
+                                                onClick={() => handleLightToggle(led)}>
+                                            {!led[1].isOn ? "Encender Luz" : "Apagar Luz"}
+                                        </button>
 
                                     </div>
                                 )

@@ -177,6 +177,11 @@ label {
 	transition      : all 0.5s;
 }
 
+.data-section button.active-led {
+
+	background-color : #6E7996;
+}
+
 .data-section button.warning{
 	background-color: #FCA903;
 }
